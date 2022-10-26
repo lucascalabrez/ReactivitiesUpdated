@@ -30,7 +30,7 @@ namespace API
             catch (Exception ex)
             {
                 var logger = services.GetRequiredService<ILogger<Program>>();
-                logger.LogError(ex, "An error ocurred during migraine");
+                logger.LogError(ex, "An error ocurred during migration");
             }
 
             await host.RunAsync();
